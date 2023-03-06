@@ -18,7 +18,7 @@ def call(){
                     script {
                         //def repos = ['for_testing_only'] // list of repositories
                         for (int i = 1; i <= 60; i++) {
-                        sh "git pull https://github.com/CrasisRS/for_testing_only.git"
+                        sh "git pull -ff-only https://github.com/CrasisRS/for_testing_only.git"
                             sleep 10
                         }
                     }
