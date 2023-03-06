@@ -8,7 +8,7 @@ def call(){
                 steps {
                     script{
                         //def repos = ['for_testing_only'] // list of repositories
-                        sh "git clone https://github.com/CrasisRS/for_testing_only.git" // clone repository
+                        sh "git clone https://gitasdfasdf.com/CrasisRS/for_testing_only.git" // clone repository
                     }
                 }
             }
@@ -19,7 +19,7 @@ def call(){
                         sh "cd for_testing_only"
                         //def repos = ['for_testing_only'] // list of repositories
                         for (int i = 1; i <= 60; i++) {
-                        sh "git fetch https://github.com/CrasisRS/for_testing_only.git"
+                        sh "git fetch https://gitasdfasdf.com/CrasisRS/for_testing_only.git"
                             sleep 10
                         }
                     }
