@@ -3,7 +3,7 @@ import java.net.HttpURLConnection
 def gitHubUrl = "https://github.com/CrasisRS/for_testing_only.git"
 def timeoutSeconds = 60
 def intervalSeconds = 5
-def startTime = System.currentTimeMillis()
+startTime = System.currentTimeMillis()
 def call(){
     while ((System.currentTimeMillis() - startTime) / 1000 < timeoutSeconds) {
         try {
