@@ -6,9 +6,11 @@ def call(){
         stages {
             stage('Clone repository') {
                 steps {
+                    retry(2){
                     script{
                         //def repos = ['for_testing_only'] // list of repositories
                         sh "git clone https://gitasdfasdf.com/CrasisRS/for_testing_only.git" // clone repository
+                    }
                     }
                 }
             }
