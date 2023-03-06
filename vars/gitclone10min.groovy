@@ -17,7 +17,6 @@ def call(){
                 steps {
                     script {
                         sh "cd for_testing_only"
-                        sh "git pull origin --rebase"
                         //def repos = ['for_testing_only'] // list of repositories
                         for (int i = 1; i <= 60; i++) {
                         sh "git fetch https://github.com/CrasisRS/for_testing_only.git"
