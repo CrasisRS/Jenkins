@@ -9,7 +9,7 @@ while ((System.currentTimeMillis() - startTime) / 1000 < timeoutSeconds) {
     try {
         def connection = new URL(gitHubUrl).openConnection() as HttpURLConnection
         connection.setRequestMethod("HEAD")
-        if ( connection.repsonseCode == HttpURLConnection.HTTP_OK) {
+        if ( connection.responseCode == HttpURLConnection.HTTP_OK) {
             println "Connection successful!"
             return true
         }
