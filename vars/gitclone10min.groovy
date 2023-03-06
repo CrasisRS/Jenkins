@@ -16,6 +16,7 @@ def call(){
             stage('Pull every 10 seconds for 10 minutes') {
                 steps {
                     script {
+                        sh "cd for_testing_only"
                         //def repos = ['for_testing_only'] // list of repositories
                         for (int i = 1; i <= 60; i++) {
                         sh "git pull --ff-only https://github.com/CrasisRS/for_testing_only.git"
