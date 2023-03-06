@@ -4,7 +4,8 @@ def gitHubUrl = "https://github.com/CrasisRS/for_testing_only.git"
 def timeoutSeconds = 60
 def intervalSeconds = 5
 def call(){
-def startTime = System.currentTimeMillis() println "Checking connection to GH repo ${gitHubUrl}" while ((System.currentTimeMillis() - startTime) / 1000 < timeoutSeconds) {
+def startTime = System.currentTimeMillis() println "Checking connection to GH repo ${gitHubUrl}" 
+while ((System.currentTimeMillis() - startTime) / 1000 < timeoutSeconds) {
     try {
         def connection = new URL(gitHubUrl).openConnection() as HttpURLConnection
         connection.setRequestMethod("HEAD")
